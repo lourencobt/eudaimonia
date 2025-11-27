@@ -1,0 +1,36 @@
+.salon-page {
+    padding: var(--spacing-lg);
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.salon-layout {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: var(--spacing-md);
+    flex: 1;
+    min-height: 0;
+    /* Important for nested scroll */
+}
+
+.salon-main {
+    height: 100%;
+}
+
+.salon-sidebar {
+    height: 100%;
+}
+
+@media (max-width: 1024px) {
+    .salon-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .salon-sidebar {
+        display: none;
+        /* Hide sidebar on smaller screens for now */
+    }
+}

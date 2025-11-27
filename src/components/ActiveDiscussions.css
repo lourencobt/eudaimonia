@@ -1,0 +1,99 @@
+.active-discussions {
+    background: var(--color-bg-secondary);
+    border-radius: 12px;
+    padding: 1.5rem;
+    height: 100%;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.section h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-secondary);
+    margin-bottom: 1rem;
+}
+
+.discussion-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.discussion-item {
+    background: white;
+    padding: 0.75rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.discussion-item.live {
+    border-left: 3px solid #4caf50;
+}
+
+.discussion-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.discussion-title {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--color-text-primary);
+}
+
+.discussion-participants {
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+}
+
+.join-btn {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.join-btn.outline {
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: var(--color-text-secondary);
+}
+
+.topic-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.topic-list li {
+    color: var(--color-text-primary);
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.topic-list li:hover {
+    background: rgba(0, 0, 0, 0.03);
+}

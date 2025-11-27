@@ -1,0 +1,51 @@
+:root {
+  /* Premium Color Palette */
+  --color-bg-primary: #fdfbf7; /* Warm, paper-like background */
+  --color-bg-secondary: #f5f2eb;
+  --color-text-primary: #2c2c2c;
+  --color-text-secondary: #666666;
+  --color-accent: #d4af37; /* Gold/Brass accent */
+  --color-accent-subtle: #e6dcc3;
+  
+  --color-gallery: #ffffff;
+  --color-salon: #fdfbf7;
+  --color-library: #f4f1ea;
+  --color-office: #e8e6e1;
+  --color-chamber: #1a1a1a; /* Dark mode for deep work */
+  --color-chamber-text: #e0e0e0;
+
+  /* Typography */
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+
+  /* Transitions */
+  --transition-slow: 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color var(--transition-slow), color var(--transition-slow);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Utility for the "Chamber" dark mode */
+body.chamber-mode {
+  background-color: var(--color-chamber);
+  color: var(--color-chamber-text);
+}

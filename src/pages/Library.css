@@ -1,0 +1,39 @@
+.library-page {
+    padding: var(--spacing-lg);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.library-controls {
+    margin-bottom: var(--spacing-md);
+}
+
+.search-bar {
+    position: relative;
+    max-width: 400px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-text-secondary);
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.2s;
+    background: white;
+}
+
+.search-bar input:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
