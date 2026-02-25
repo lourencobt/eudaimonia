@@ -54,6 +54,7 @@ export function Navigation() {
                             to={item.path}
                             className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
                             data-tooltip={item.label}
+                            title={item.label}
                         >
                             <item.icon className="nav-icon" size={22} />
                             <div className="nav-text">
