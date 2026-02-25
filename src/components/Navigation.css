@@ -181,13 +181,11 @@
 .navigation.collapsed .nav-link {
     justify-content: center;
     padding: 0.65rem;
-    border-left: none;
     gap: 0;
 }
 
 .navigation.collapsed .nav-link.active {
     background-color: var(--color-accent-subtle);
-    border-left: none;
     border-radius: 10px;
 }
 
