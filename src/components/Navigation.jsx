@@ -33,6 +33,9 @@ export function Navigation() {
             if (e.matches) {
                 // Auto-collapse on small screens without overwriting user preference in localStorage
                 setCollapsed(true);
+            } else {
+                // Restore the user's stored preference when returning to a wide viewport
+                setCollapsed(localStorage.getItem(STORAGE_KEY) === 'true');
             }
         }
 
