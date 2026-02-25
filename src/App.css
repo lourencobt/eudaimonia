@@ -10,7 +10,10 @@
   overflow-x: hidden;
 }
 
-/* Offset main content for fixed sidebar */
+/* Offset main content for fixed sidebar.
+   Adjacent sibling selectors only match when Navigation is rendered.
+   In Chamber mode, Navigation is conditionally removed (see App.jsx),
+   so these selectors won't match and .main-content uses full width — intentional. */
 .navigation + .main-content {
   margin-left: var(--sidebar-width-expanded);
   transition: margin-left var(--sidebar-transition-duration) ease-in-out;
