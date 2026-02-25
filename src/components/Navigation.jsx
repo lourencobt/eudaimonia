@@ -31,8 +31,8 @@ export function Navigation() {
 
         function handleMediaChange(e) {
             if (e.matches) {
+                // Auto-collapse on small screens without overwriting user preference in localStorage
                 setCollapsed(true);
-                localStorage.setItem(STORAGE_KEY, 'true');
             }
         }
 
